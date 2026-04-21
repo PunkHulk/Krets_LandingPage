@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krets Soluções em Tecnologia | TI Corporativa Inteligente e Segura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        krets: {
+                            'dark': '#000000', // Fundo principal
+                            'accent': '#00FF00', // Verde Neon Vibrante (máximo destaque)
+                            'primary': '#32CD32', // Verde Lima (para textos e bordas)
+                            'light-accent': '#00FF00', // Verde Neon mais claro/vibrante
+                            'card': '#111111', // Fundo de cards e seções secundárias
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-krets-dark text-white antialiased font-sans">
+
+    <nav class="bg-krets-card border-b border-krets-accent sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="Krets Soluções" class="h-14 w-auto drop-shadow-[0_0_10px_#00FF00]">
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest text-white/70">
+                <a href="#servicos" class="hover:text-krets-accent transition">Soluções Gerenciadas</a>
+                <a href="#diferenciais" class="hover:text-krets-accent transition">Infraestrutura Profissional</a>
+                <a href="/residencial" class="text-krets-accent border-b-2 border-krets-accent">Área Residencial</a>
+            </div>
+            <a href="https://wa.me/13997732288" class="bg-krets-accent text-krets-dark px-6 py-3 rounded-full shadow-[0_0_15px_rgba(0,255,0,0.5)] hover:bg-white transition text-xs font-black uppercase tracking-widest">Atendimento Pessoa Juridica</a>
+        </div>
+    </nav>
+
+    <section class="py-24 bg-krets-dark">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-krets-accent font-black tracking-widest uppercase text-xs">Baixada Santista</span>
+                <h1 class="text-5xl font-black text-white leading-tight mt-4 uppercase tracking-tighter drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">Sua TI Inteligente, Segura e Ininterrupta.</h1>
+                <p class="text-xl text-white/80 mt-6 leading-relaxed font-light">
+                    Transformando sua infraestrutura em vantagem competitiva. Consultoria, monitoramento avançado e segurança de dados e backups programados para empresas em Santos e região.
+                </p>
+                <div class="mt-12 flex space-x-5">
+                    <a href="#contato" class="bg-krets-accent text-krets-dark px-8 py-5 rounded font-black hover:bg-white shadow-[0_0_15px_rgba(0,255,0,0.5)] transition uppercase tracking-widest">Solicitar Consultoria</a>
+                    <a href="#servicos" class="border border-krets-accent/30 text-white/90 px-8 py-5 rounded font-black hover:border-krets-accent transition uppercase tracking-widest">Nossas Soluções</a>
+                </div>
+            </div>
+            <div class="bg-krets-card aspect-video rounded-3xl shadow-[inset_0_0_20px_rgba(0,0,0,0.6)] flex items-center justify-center border-2 border-krets-accent/30 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Placa de Circuito Tech" class="w-full h-full object-cover grayscale opacity-20 absolute inset-0 z-0">
+
+                <div class="absolute inset-0 bg-gradient-to-br from-krets-dark/80 via-transparent to-krets-accent/20 z-10"></div>
+
+                <img src="logo2.png" alt="Logo Krets Tech" class="relative z-20 w-1/2 md:w-3/5 drop-shadow-[0_0_25px_rgba(0,255,0,0.5)] hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-krets-card">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black text-center text-krets-accent mb-16 uppercase tracking-widest drop-shadow-[0_0_8px_#00FF00]">Soluções Gerenciadas</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-krets-dark p-8 rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.4)] border border-krets-accent/20 hover:border-krets-accent/60 transition group">
+                    <div class="mb-6 flex items-center space-x-3">
+                        <span class="text-krets-accent font-black text-4xl">/01</span>
+                        <h3 class="font-black text-xl text-white uppercase tracking-wider">Monitoramento & Resposta (SLA)</h3>
+                    </div>
+                    <p class="text-white/80 text-sm mb-4 font-light leading-relaxed">Garantimos a continuidade do seu negócio com tempos de resposta definidos (SLA) e visitas preventivas mensais para evitar paradas críticas.</p>
+                </div>
+                <div class="bg-krets-dark p-8 rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.4)] border border-krets-accent/20 hover:border-krets-accent/60 transition group">
+                    <div class="mb-6 flex items-center space-x-3">
+                        <span class="text-krets-accent font-black text-4xl">/02</span>
+                        <h3 class="font-black text-xl text-white uppercase tracking-wider">Cibersegurança e Backup Gerenciado</h3>
+                    </div>
+                    <p class="text-white/80 text-sm mb-4 font-light leading-relaxed">Implementação de políticas rigorosas de segurança, antivírus avançado e backup em nuvem.</p>
+                </div>
+                <div class="bg-krets-dark p-8 rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.4)] border border-krets-accent/20 hover:border-krets-accent/60 transition group">
+                    <div class="mb-6 flex items-center space-x-3">
+                        <span class="text-krets-accent font-black text-4xl">/03</span>
+                        <h3 class="font-black text-xl text-white uppercase tracking-wider">Infraestrutura e Consultoria Profissional</h3>
+                    </div>
+                    <p class="text-white/80 text-sm mb-4 font-light leading-relaxed">Montagem de racks, configuração de roteadores profissionais, cabeamento estruturado e consultoria para otimização de infraestrutura de TI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-krets-dark">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-white uppercase tracking-widest">Agende um Diagnóstico Tecnico</h2>
+                <p class="text-krets-accent mt-4 text-xs font-bold uppercase tracking-widest">Dê o primeiro passo para uma TI inteligente.</p>
+            </div>
+            <form id="form-b2b" class="space-y-5">
+                <input type="text" name="empresa" placeholder="Nome da Empresa" required class="w-full p-5 bg-krets-card text-white border border-krets-accent/10 rounded focus:border-krets-accent outline-none text-sm">
+                <div class="grid grid-cols-2 gap-5">
+                    <input type="text" name="nome" placeholder="Seu Nome" required class="w-full p-5 bg-krets-card text-white border border-krets-accent/10 rounded focus:border-krets-accent outline-none text-sm">
+                    <input type="tel" name="whatsapp" placeholder="WhatsApp (DDD)" required class="w-full p-5 bg-krets-card text-white border border-krets-accent/10 rounded focus:border-krets-accent outline-none text-sm">
+                </div>
+                <textarea name="necessidade" placeholder="Descreva a necessidade..." rows="4" class="w-full p-5 bg-krets-card text-white border border-krets-accent/10 rounded focus:border-krets-accent outline-none text-sm"></textarea>
+                <button type="submit" id="btn-enviar" class="w-full bg-krets-accent text-krets-dark font-black py-6 rounded hover:bg-white shadow-[0_0_20px_rgba(0,255,0,0.6)] transition uppercase tracking-widest text-sm">Enviar Solicitação</button>
+            </form>
+
+            <script>
+                const form = document.getElementById('form-b2b');
+                const btn = document.getElementById('btn-enviar');
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzHdPV--NCS5E_P6esdo81K7Tp86NL2qd5Fsp_ibIm5JoAdtpK3bMfda_gsIdMhPKOjOw/exec';
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    btn.disabled = true;
+                    btn.innerText = 'ENVIANDO...';
+
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            alert('Solicitação enviada com sucesso! Entraremos em contato em breve.');
+                            form.reset();
+                            btn.disabled = false;
+                            btn.innerText = 'Enviar Solicitação';
+                        })
+                        .catch(error => {
+                            alert('Erro ao enviar. Tente novamente ou use o WhatsApp.');
+                            btn.disabled = false;
+                            btn.innerText = 'Enviar Solicitação';
+                        });
+                });
+            </script>
+        </div>
+    </section>
+
+    <footer class="text-center py-12 bg-krets-card text-white/50 border-t border-krets-accent/10">
+        <p class="text-xs uppercase tracking-widest font-light">&copy; 2025 KRETS Soluções em Tecnologia - Atendimento Gerenciado na Baixada Santista.</p>
+    </footer>
+
+</body>
+
+</html>
