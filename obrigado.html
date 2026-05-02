@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Recebido | Krets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        krets: {
+                            'dark': '#09090b',
+                            'accent': '#00FF00',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Cole a sua tag do Google Analytics (G-Z6D6Y00P5V) exatamente aqui -->
+</head>
+
+<body class="bg-krets-dark text-gray-200 h-screen flex flex-col items-center justify-center p-4 text-center antialiased">
+
+    <div class="bg-[#18181b] border border-zinc-800 rounded-2xl p-10 max-w-lg shadow-2xl flex flex-col items-center">
+        <!-- Ícone de Sucesso -->
+        <svg class="w-20 h-20 text-krets-accent mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+
+        <h1 class="text-3xl font-black text-white uppercase tracking-tighter mb-4">Solicitação Recebida</h1>
+
+        <p class="text-zinc-400 mb-8 leading-relaxed">
+            Seus dados foram enviados com sucesso. Nossa equipe técnica da Krets entrará em contato em breve para seguir com o seu atendimento.
+        </p>
+
+        <div class="w-full space-y-4">
+            <!-- Chamada principal (Autoridade) -->
+            <a href="https://links.krets.com.br/feedback.html" target="_blank" class="flex items-center justify-center w-full bg-krets-accent text-black font-extrabold py-3 px-4 rounded-lg transition-all hover:scale-105 shadow-[0_0_15px_rgba(0,255,0,0.2)]">
+                Veja o que os clientes dizem da Krets
+            </a>
+
+            <a href="index.html" class="flex items-center justify-center w-full bg-zinc-900 border border-zinc-700 text-white font-bold py-3 px-4 rounded-lg transition-all hover:bg-zinc-800 hover:border-krets-accent">
+                Voltar para a página inicial
+            </a>
+        </div>
+
+</body>
+
+</html>

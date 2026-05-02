@@ -131,10 +131,11 @@
 
                     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                         .then(response => {
-                            alert('Solicitação enviada com sucesso! Entraremos em contato em breve.');
-                            form.reset();
-                            btn.disabled = false;
-                            btn.innerText = 'Enviar Solicitação';
+                            // alert('Solicitação enviada com sucesso! Entraremos em contato em breve.');
+                            //form.reset();
+                            //btn.disabled = false;
+                            //btn.innerText = 'Enviar Solicitação';
+                            window.location.href = 'obrigado.html';
                         })
                         .catch(error => {
                             alert('Erro ao enviar. Tente novamente ou use o WhatsApp.');
