@@ -260,9 +260,10 @@
 
                     const nome = document.getElementById('f-nome').value.trim();
                     const empresa = document.getElementById('f-empresa').value.trim();
-                    const zap = document.getElementById('f-whatsapp').value.replace(/\D/g, '');
+                    let zap = document.getElementById('f-whatsapp').value.replace(/\D/g, '').replace(/^0+/, '');
+                    if ((zap.length === 12 || zap.length === 13) && zap.startsWith('55')) zap = zap.slice(2);
                     if (!nome || !empresa) { mostrarErro('Preencha seu nome e o nome da empresa.'); return; }
-                    if (zap.length < 10) { mostrarErro('Confira o WhatsApp: digite o DDD e o número, por exemplo 13 99999-9999.'); return; }
+                    if (zap.length !== 10 && zap.length !== 11) { mostrarErro('Confira o WhatsApp: digite o DDD e o número, por exemplo 13 99999-9999.'); return; }
 
                     const qtd = (form.querySelector('input[name="qtd"]:checked') || {}).value || 'não informado';
                     const probs = [...form.querySelectorAll('input[name="prob"]:checked')].map(i => i.value);
@@ -275,7 +276,7 @@
                     const dados = new FormData();
                     dados.append('empresa', empresa);
                     dados.append('nome', nome);
-                    dados.append('whatsapp', document.getElementById('f-whatsapp').value.trim());
+                    dados.append('whatsapp', zap);
                     dados.append('necessidade', document.getElementById('f-necessidade').value);
 
                     btn.disabled = true;
